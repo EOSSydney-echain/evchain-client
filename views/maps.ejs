@@ -1,0 +1,17 @@
+<%- include('header') %>
+	<div class="wrapper">
+		<div id="googleMap" style="width: 100%; height: 100%;"></div>
+
+		<button class="btnCamera" onclick="location.href='/scan';">
+			<i class="fas fa-camera"></i>
+		</button>
+	</div>
+	<!-- <div class="" style="width: 100%; height: 100%; position: absolute;"> -->
+	<!-- </div> -->
+
+
+	<script src="/js/maps.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgHwWGwqIawj5-bWarlfQU-mN7qPFrntw&callback=myMap"></script>
+
+
+	<%- include('footer') %>

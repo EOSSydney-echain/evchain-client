@@ -1,8 +1,114 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+@media screen {
+    * {
+        margin: 0px;
+        outline: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img {
+        border: none;
+    }
+    textarea {
+        resize: none;
+    }
+    html {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+        /* padding: 60px 0 0 0; */
+        height: 100%;
+        width: 100%;
+        /* font-family: 'Dosis', 'Noto Sans KR', sans-serif; */
+        font-family: 'Spoqa Han Sans', sans-serif;
+        /* font-family: 'Iropke Batang', sans-serif; */
+        font-size: 16px;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .header {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #7BA8FF;
+        z-index: 300;
+        line-height: 50px;
+        color: #ffffff;
+    }
+    .header .header-back{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        display: inline-block;
+    }
+    .footer {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid #ededed;
+        background-color: #f9f9f9;
+        z-index: 300;
+    }
+    .footer table{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .footer table tr{
 
-a {
-  color: #00B7FF;
+    }
+    .footer table tr td{
+        text-align: center;
+        color: #adadad;
+        font-size: .9em;
+    }
+    .btnCamera {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        padding: 15px 10px;
+        background: none;
+        border: none;
+        background-color: #7BA8FF;
+        color: #ffffff;
+        transform: translateX(-50%);
+        border-radius: 4px;
+        font-size: 1.2em;
+        z-index: 30;
+    }
+    .wrapper{
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    video#preview{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transform: scale(1.3);
+        background-color: #000000;
+    }
+
 }
