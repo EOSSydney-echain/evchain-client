@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+	var socket = io.connect(location.protocol + "//" + location.host);
+
+
 	$("body").on("click", "#charge", function () {
 		swal({
 			title: "Start Charging",
@@ -19,8 +23,10 @@ $(document).ready(function () {
 					closeModal: true
 				}
 			}
-		}).then(function(value){
-			if(value){
+		}).then(function (value) {
+			if (value) {
+				socket.emit('startCharge');
+
 				location.href = "/charge";
 			}
 		});

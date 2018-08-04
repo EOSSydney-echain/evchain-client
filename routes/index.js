@@ -25,4 +25,8 @@ router.get('/sharing', function (req, res, next) {
   res.render('sharing');
 });
 
+router.get('/panel', function (req, res, next) {
+  res.render("panel");
+});
+
 module.exports = router;

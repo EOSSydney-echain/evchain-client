@@ -1,19 +1,7 @@
+var map;
+var p;
 
 function myMap() {
-	var map;
-	var p;
-	setTimeout(() => {
-
-		var marker = new google.maps.Marker({
-			position: {
-				lat: p.coords.latitude,
-				lng: p.coords.longitude
-			},
-			map: map,
-			icon: "/img/pin.png",
-			title: 'Hello World!'
-		});
-	}, 3000);
 
 
 	if (navigator.geolocation) {
@@ -66,3 +54,21 @@ function myMap() {
 
 }
 
+
+
+
+$(document).ready(function () {
+	var socket = io.connect(location.protocol + "//" + location.host);
+
+	socket.on('addPin', function () {
+		var marker = new google.maps.Marker({
+			position: {
+				lat: p.coords.latitude,
+				lng: p.coords.longitude
+			},
+			map: map,
+			icon: "/img/pin.png",
+			title: 'Hello World!'
+		});
+	});
+})
