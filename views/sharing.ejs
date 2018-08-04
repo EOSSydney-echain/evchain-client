@@ -1,0 +1,78 @@
+<%- include("header") %>
+
+	<div class="wrapper">
+		<div class="detail">
+			<div class="detail-big">
+				<span id="evt"></span> EVT
+			</div>
+			<div class="detail-small">
+				<span id="usd"></span> USD
+			</div>
+		</div>
+
+
+		<div class="text-normal">
+			Your current status
+		</div>
+		<div class="text-bold">
+			Supplying
+		</div>
+		<br>
+		<br>
+		<table style="padding: 5px;">
+			<tr>
+				<td style="width:20%;">
+					<img src="/img/charge.png" alt="" style="width: 100%;">
+				</td>
+				<td style="width: 40%;">
+					<table class="dots">
+						<tr>
+							<td class="selected">
+								<div></div>
+							</td>
+							<td>
+								<div></div>
+							</td>
+							<td>
+								<div></div>
+							</td>
+							<td>
+								<div></div>
+							</td>
+							<td>
+								<div></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="width: 40%;">
+					<img src="/img/car.png" alt="" style="width: 100%;">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<div>
+			<span style="font-weight: 700; font-size: 1.4em;">
+				<span>+0.12 EVT /</span>
+				<span>min</span>
+		</div>
+		<div>
+			(estimated)
+			<!-- <span>
+				<span id="mins">0</span> min(s)
+				<span id="secs">0</span> sec(s)</span> -->
+		</div>
+		<br>
+		<br>
+		<button class="button">
+			Force Stop
+		</button>
+
+		<div class="text-normal" style="color: #4981BB;">
+			Who’s charging now?
+		</div>
+	</div>
+	<script src="/js/sharing.js"></script>
+
+	<%- include("footer") %>
