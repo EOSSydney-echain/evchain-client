@@ -1,6 +1,6 @@
 var evt = parseFloat(localStorage.getItem("evt")) || 16.092;
-
-
+var userName = localStorage.getItem("name") || Math.random();
+var objective = "";
 $(document).ready(function () {
 	$("body").on("click", ".header-back", function () {
 		history.back();

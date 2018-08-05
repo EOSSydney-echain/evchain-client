@@ -1,8 +1,20 @@
 $(document).ready(function () {
+	var socket = io.connect(location.protocol + "//" + location.host);
+
+
+	socket.on("stopCharge", function () {
+		location.href = "share";
+	});
+
+	setTimeout(function () {
+		$("body").addClass("green");
+	}, 100);
+
 	swal({
 		title: "Wow!",
 		text: "Someone is charging EV\nat your place!",
-		button: "Cool~~~"
+		button: "Cool~~~",
+		icon: "success"
 	})
 	var nowDot = 0;
 	setInterval(function () {

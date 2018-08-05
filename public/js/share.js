@@ -3,4 +3,12 @@ $(document).ready(function () {
 	socket.on("startCharge", function () {
 		location.href = "/sharing";
 	});
+
+
+	swal({
+		title: "Congratulations!",
+		text: "You are ready to share electricity and make money.",
+		button: "OK",
+		icon: "success"
+	})
 })

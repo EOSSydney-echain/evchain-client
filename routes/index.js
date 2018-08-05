@@ -2,6 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
+router.get('/', function(req, res, next){
+  res.render("intro");
+});
+
 router.get('/maps', function (req, res, next) {
   res.render('maps', { title: 'Express' });
 });
@@ -23,6 +27,9 @@ router.get('/share', function (req, res, next) {
 });
 router.get('/sharing', function (req, res, next) {
   res.render('sharing');
+});
+router.get('/addPin', function (req, res, next) {
+  res.render('addPin');
 });
 
 router.get('/panel', function (req, res, next) {

@@ -8,8 +8,8 @@ module.exports = (server) => {
 		socket.on("startCharge", function() {
 			socket.broadcast.emit("startCharge");
 		});
-		socket.on('chat', function (sid) {
-			socket.broadcast.to(socket.room).emit("updateChat", sid);
+		socket.on('stopCharge', function (sid) {
+			socket.broadcast.emit("stopCharge");
 		});
 		socket.on('disconnection', function () {
 			socket.leave(socket.room);
